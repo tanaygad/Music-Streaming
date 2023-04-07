@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> PARADISE - Homepage </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-image:url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                padding-top:50px;
+                padding-left:400px
+            }
+            .navbar{
+                display: flex;
+                height:70px;
+                position:fixed;
+                top:0;
+                left:0;
+                right:0;
+                z-index: 100;
+            }
+            .sec1{
+                background-color:blueviolet;
+                display:flex;
+                width:300px;
+                align-items:center;
+            }
+            .sec2{
+                padding-top:10px;
+                display:flex;
+                background-color:blueviolet;
+                flex: 1;
+                
+            }
+            .sec3{
+                background-color:blueviolet;
+                display:flex;
+                width:500px;
+                align-items:center;
+                justify-content:space-between;
+            }
+            .logo{
+                border-radius:25px;
+                height:50px;
+                margin-left:10px;
+            }
+            .sidebar{
+                display:flex;
+                flex-direction:column;
+                position:fixed;
+                width:350px;
+                background-color:black;
+                opacity:0.9;
+                bottom:0;
+                left:0;
+                top:70px;
+                border-right:2px solid black;
+            }
+            .options{
+                padding-left:10px;
+                height:70px;
+                border:2px solid gray;
+                align-items:center;
+                background-color:black;
+            }
+            .options:hover{
+                background-color:green;
+                opacity:0.8;
+                transition-duration: 0.4s;
+            }
+            h1{
+                color:white;
+                text-align: left;
+            }
+            .floater{
+                display:flex;
+                height:700px;
+                margin-top:70px;
+                margin-left:50px;
+                margin-right:50px;
+                background-color:white;
+                opacity:1;
+                align-items:center;
+            }
+            h2{
+                color:black;
+                font-family:Arial;
+                font-weight: bold;
+            }
+            .imgfloat{
+                width:100%;
+                height:100%;
+            }
+            .slideright{
+                margin-right:-100px;
+                opacity:0.3;
+                border:2px solid black;
+                height:75px;
+                border-radius:10px;
+                width:50px;
+                transform: translate(-100%);
+            }
+            .rightslideimg{
+                width:100%;
+                height:100%;
+
+            }
+            .slideright:hover{
+                opacity:0.9;
+                transition-duration: 0.4s;
+            }
+            .topcharts{
+                padding-left:10px;
+                height:70px;
+                border:2px solid gray;
+                align-items:center;
+                background-color:black;
+            }
+            .topcharts:hover{
+                background-color:green;
+                transition-duration: 0.4s;
+                opacity:0.8;
+            }
+            a{
+                color:black;
+                text-decoration:none;
+            }
+            a:hover{
+                color:red;
+                transition-duration: 0.4s;
+            }
+            .site-info{ 
+                display: inline-flex;
+                margin-left: 100px;
+                margin-top: 50px;
+                color:white;
+                font-family: Arial;
+                font-size: 20px;
+            }
+            .creators{
+
+                margin-top: 20px;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                flex:1 1 0px;
+            }
+            .creator-box{
+                background-image: url("https://images.pexels.com/photos/3308588/pexels-photo-3308588.jpeg?cs=srgb&dl=pexels-mnm-zameer-3308588.jpg&fm=jpg");
+                /* background-color: rgb(128, 197, 128); */
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                padding: 20px;
+                border:5px solid yellow;
+                border-radius:10px;
+                display:flex;
+                flex-direction: column;
+            }
+            .creator-img{   
+                display: flex;  
+                border-style: solid;
+                border-width: 4px;
+                border-color: white;
+                border-radius: 10px;
+            }
+            .creator-info{
+                
+                background-repeat:repeat;
+                background-attachment:fixed;
+                background-size:auto;
+                padding-left: 10px;  
+                font-weight: bold;
+                font-family: Arial;
+                font-size: 30px;
+                color: rgb(43, 43, 197);
+                border-style: solid;
+                border-width: 6px;
+                border-color: white;
+                border-radius: 10px;
+
+            }
+            #contact{
+                color: rgb(43, 43, 197);
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+    <body style="height:1000px">
+        <div class="navbar">
+            <div class="sec1">
+                <img src="LOGO.png" class="logo">
+                <p style="font-family:Lobster;margin:10px;font-size:40px">PARADISE</p>
+            </div>
+            <div class="sec2">
+                <pre>             </pre>
+            </div>
+            <div class="sec3">
+                <div><h2><a href="http://127.0.0.1:5500/home1.html">HOME</a></h2></div>
+                <div><h2><a href="http://127.0.0.1:5500/about.html">ABOUT</a></h2></div>
+                <div><h2>NOTIFICATIONS</h2></div>
+                <div style="padding-right:10px"><h2>LOGIN</h2></div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <button class="options"><h1>SEARCH</h1></button>
+            <button class="topcharts"><h1>TOP CHARTS</h1></button>
+            <button class="options"><h1>ARTISTS</h1></button>
+            <button class="options"><h1>SONGS</h1></button>
+            <button class="options"><h1>FAVOURITES</h1></button>
+            <button class="options"><h1>THEMES</h1></button>
+            <button class="options"><h1>EXPLORE</h1></button>
+            <button class="options"><h1>PLAYLISTS</h1></button>
+            <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
+        </div>
+        <div class="site-info">
+            <p>This is website designed to help users keep in touch with the latest songs and make sure you don't miss any of the hits.</p>
+        </div>
+        <div class="creators">
+            <div class="creator-box">
+                <div class="creator-img">
+                    <img src="randompic" class="image">
+                </div>
+                <div class="creator-info">
+                    
+                    <p>Annamalai Senthil</p>
+                    <p>Student</p>
+                    <p>IIITH</p>
+                    <p><a id="contact" href="">Contact</a></p>
+                </div>
+            </div>
+            <div class="creator-box">
+                <div class="creator-img">
+                    <img src="randompic" class="image">
+                </div>
+                <div class="creator-info">
+                    <p>Tanay Gad</p>
+                    <p>Student</p>
+                    <p>IIITH</p>
+                    <p><a id="contact" href="">Contact</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
