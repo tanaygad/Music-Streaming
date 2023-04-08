@@ -5,166 +5,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background-image: url('https://e0.pxfuel.com/wallpapers/514/6/desktop-wallpaper-abstract-glowing-blue-triangle-tessellation-thumbnail.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                padding-top:50px;
-                padding-left:400px
-            }
-            .navbar{
-                display: flex;
-                height:70px;
-                position:fixed;
-                top:0;
-                left:0;
-                right:0;
-                z-index: 100;
-            }
-            .sec1{
-                background-color:blueviolet;
-                display:flex;
-                width:300px;
-                align-items:center;
-            }
-            .sec2{
-                padding-top:10px;
-                display:flex;
-                background-color:blueviolet;
-                flex: 1;
-                
-            }
-            .sec3{
-                background-color:blueviolet;
-                display:flex;
-                width:500px;
-                align-items:center;
-                justify-content:space-between;
-            }
-            .logo{
-                border-radius:25px;
-                height:50px;
-                margin-left:10px;
-            }
-            .sidebar{
-                display:flex;
-
-                flex-direction:column;
-                position: fixed;
-                width:400px;
-                background-color:black;
-                opacity:0.9;
-                bottom:0;
-                left:0;
-                top:70px;
-                border-right:2px solid black;
-            }
-            .options{
-                padding-left:10px;
-                height:70px;
-                border:2px solid gray;
-                align-items:center;
-                background-color:black;
-            }
-            .options:hover{
-                background-color:green;
-                opacity:0.8;
-                
-            }
-            h1{
-                color:white;
-            }
-            .floater{
-                display:flex;
-                height:700px;
-                margin-top:70px;
-                margin-left:50px;
-                margin-right:50px;
-                background-color:white;
-                opacity:1;
-                align-items:center;
-            }
-            h2{
-                color:black;
-                font-family:Arial;
-                font-weight: bold;
-            }
-            .imgfloat{
-                width:100%;
-                height:100%;
-            }
-            .slideright{
-                margin-right:-100px;
-                opacity:0.3;
-                border:2px solid black;
-                height:75px;
-                border-radius:10px;
-                width:50px;
-                transform: translate(-100%);
-            }
-            .rightslideimg{
-                width:100%;
-                height:100%;
-
-            }
-            .slideright:hover{
-                opacity:0.9;
-            }
-            .topcharts{
-                padding-left:10px;
-                height:70px;
-                border:2px solid gray;
-                align-items:center;
-                background-color:black;
-            }
-            .topcharts:hover{
-                background-color:green;
-                opacity:0.8;
-            }
-            a{
-                color:black;
-                text-decoration:none;
-            }
-            a:hover{
-                color:red;
-                transition-duration: 0.4s;
-            }
-            .ender{
-                text-align:center;
-                font-family:Helvetica;
-                font-size:18;
-                color:yellow;
-                background-color:black;
-                margin-right:0;
-                margin-bottom:0;
-                z-index: 120;
-                margin-top:50px;
-                height:20px;
-            }
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body style="height:1000px">
         <div class="navbar">
             <div class="sec1">
-                <img src="LOGO.png" class="logo">
-                <p style="font-family:Lobster;margin:10px;font-size:40px">PARADISE</p>
+                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png" class="logo">
+                <p class="title">RESONANCE</p>
             </div>
             <div class="sec2">
                 <pre>             </pre>
             </div>
             <div class="sec3">
-                <div><h2><a href="http://127.0.0.1:5500/home1.html">HOME</a></h2></div>
-                <div><h2><a href="http://127.0.0.1:5500/about.html">ABOUT</a></h2></div>
-                <div><h2>NOTIFICATIONS</h2></div>
+                <div><h2><a href="http://127.0.0.1:5500/src/home1.html">HOME</a></h2></div>
+                <div><h2><a href="http://127.0.0.1:5500/src/about.html">ABOUT</a></h2></div>
+                <div><h2>ARTISTS</h2></div>
                 <div style="padding-right:10px"><h2>LOGIN</h2></div>
             </div>
 
         </div>
         <div class="sidebar">
             <button class="options"><h1>SEARCH</h1></button>
-            <button class="topcharts"><h1>TOP CHARTS</h1></button>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><h1>TOP CHARTS</h1></button>
+                <div class="dropdown-content">
+                  <button class="options1"><a href="#"><h1>&bull;  TOP ARTISTS</h1></a></button>
+                  <button class="options1"><a href="#"><h1>&bull;  TOP ALBUMS</h1></a></button>
+                  <button class="options1"><a href="#"><h1>&bull;  TOP SONGS</h1></a></button>
+                </div>
+              </div>
             <button class="options"><h1>ARTISTS</h1></button>
             <button class="options"><h1>SONGS</h1></button>
             <button class="options"><h1>FAVOURITES</h1></button>
@@ -175,10 +48,65 @@
         </div>
         <div class="floater">
             <img class="imgfloat" src="https://www.tripsavvy.com/thmb/ZDRQXV-PiFDTFZu4x22mZkYuw9s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-930881934-5ae56fe48023b90036464e72.jpg">
-            <button class="slideright">
+            <button class="slideright" onclick="window.location.href='http://127.0.0.1:5500/src/home1.html'">
                 <img class="rightslideimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcAwZlFvoBxI5A1yP99MLwVrkDEhS9UThApCh-BCrg8gWMROIu5ebzIlVYJELKnM0_4A&usqp=CAU">
             </button>
         </div>
-        <div class="ender">OK_16</div>
+        <div class="label1">
+            <div style="display:block;text-align: center;"><h1 class="topchartsheadings">Top ARTISTS</h1></div>
+            <div class="topartists">
+                <div class="card1">
+                    <a href="" target="_blank">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e" class="pic">
+                        <h1 class="Name">IMAGINE DRAGONS</h1>
+                        <p class="followers">30.3 M followers</p>
+                    </a>
+                </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6"></div>
+                <div class="card1">
+                    <a href="" target="_blank">
+                        <img src="https://filmfare.wwmindia.com/content/2022/jan/arrahman21641465973.jpg" class="pic">
+                        <h1 class="Name"> AR RAHMAN </h1>
+                        <p class="followers"> MOZART OF MADRAS </p>
+                    </a>
+                </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6;"></div>
+                <div class="card1">
+                    <a href="" target="_blank">
+                        <img src="https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161" class="pic">
+                        <h1 class="Name">ILAIYARAAJA</h1>
+                        <p class="followers">ISAIGNANI-MUSICAL GENIUS</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="label2">
+            <div style="display:block;text-align: center;"><h1 class="topchartsheadings" style="color:red">Top ALBUMS</h1></div>
+            <div class="topartists">
+                <div class="card2">
+                    <a href="" target="_blank">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZmQwMDY5OTAtYjllNC00NWVkLWIxYWYtN2Q5NzFkMDc0NWIzXkEyXkFqcGdeQXVyODMyODMxNDY@._V1_.jpg" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:red">ROJA ~ AR RAHMAN</h1>
+                        <p class="followers">1 B views</p>
+
+                    </a>
+                </div>
+                <div class="card2">
+                    <a href="" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/1/1e/Imagine_Dragons_Mercury_album_cover_2022.webp.png/220px-Imagine_Dragons_Mercury_album_cover_2022.webp.png" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:red"> MERCURIAL ACT ~ IMAGINE DRAGONS</h1>
+                        <p class="followers"> MOZART OF MADRAS </p>
+                    </a>
+                </div>
+                <div class="card2">
+                    <a href="" target="_blank">
+                        <img src="https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:red">ILAIYARAAJA</h1>
+                        <p class="followers">ISAIGNANI-MUSICAL GENIUS</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ender"> <a id="footer" href="http://127.0.0.1:5500/src/about.html"> ABOUT </a>OK_16</div>
     </body>
 </html>
