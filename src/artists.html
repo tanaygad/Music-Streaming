@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> RESONANCE - Homepage </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="height:1000px;">
+        <div class="navbar">
+            <div class="sec1">
+                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png" class="logo">
+                <p class="title">RESONANCE</p>
+            </div>
+            <div class="sec2">
+                <pre>             </pre>
+            </div>
+            <div class="sec3">
+                <div><h2><a href="home1.html">HOME</a></h2></div>
+                <div><h2><a href="about.html">ABOUT</a></h2></div>
+                <div><h2><a href="artists.html" style="color:white;">ARTISTS</a></h2></div>
+                <div style="padding-right:10px"><h2>LOGIN</h2></div>   
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <button class="options"><h1>SEARCH</h1></button>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><h1>TOP CHARTS</h1></button>
+                <div class="dropdown-content">
+                  <button class="options1"><a href="#label1"><h1>&bull;  TOP ARTISTS</h1></a></button>
+                  <button class="options1"><a href="#label2"><h1>&bull;  TOP ALBUMS</h1></a></button>
+                  <button class="options1"><a href="#label3"><h1>&bull;  TOP SONGS</h1></a></button>
+                </div>
+              </div>
+            <button class="options" onclick = "window.location.href='artists.html';"><h1>ARTISTS</h1></button>
+            <button class="options"><h1>SONGS</h1></button>
+            <button class="options"><h1>FAVOURITES</h1></button>
+            <button class="options"><h1>THEMES</h1></button>
+            <button class="options"><h1>EXPLORE</h1></button>
+            <button class="options"><h1>PLAYLISTS</h1></button>
+            <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
+        </div>
+        <div class="container">
+            <svg width="401" height="180" class="ribbon">
+                <linearGradient class="gradient1" id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ff0000"/>
+                    <stop offset="100%" stop-color="#FFFF00"/>
+                </linearGradient>
+                <linearGradient class="gradient2" id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#800000"/>
+                    <stop offset="100%" stop-color="#FFFF00"/>
+                </linearGradient>
+                <path d="M50 100 L400 100 L300 140 L400 180 L50 180 L50 100 " fill="url(#gradient1)" stroke="red" stroke-width="5" class="ribbon1"></path>
+                <text x="60%" y="85%" fill="white" font-size="40" font-family=Lobster text-anchor="end">ARTISTS</text>
+            </svg>
+            <div class="image-profile-row">
+                <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg" class="box">
+                    <defs>
+                      <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="100%" stop-color="blue" />
+                      </radialGradient>
+                      </defs>
+                      <defs>
+                        <pattern id="image1" x="0" y="0" width="1" height="1">
+                            <image xlink:href="https://filmfare.wwmindia.com/content/2022/jan/arrahman21641465973.jpg" width="50" height="40" preserveAspectRatio="none" object-position="center"/>
+                          </pattern>>
+                      </defs>
+                      <filter id="drop-shadow" x="-40%" y="-40%" width="200%" height="200%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+                        <feOffset dx="7" dy="7" result="offsetblur" />
+                        <feFlood flood-color="yellow" />
+                        <feComposite in2="offsetblur" operator="in" />
+                        <feMerge>
+                          <feMergeNode />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                  <polygon points="20,10 50,10 60,20 55,70 35,80 15,70 10,20 20,10" fill="url(#gradient)" stroke="white" onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+     
+                  <polygon points="25,15 45,15 55,22 53,50 35,55 17,50 15,22 25,15" fill="url(#image1)"  stroke="darkblue"; onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+                  <text x="50%" y="70%" fill="black" font-size="5" font-weight="bold" text-anchor="middle">AR RAHMAN</text>
+                </svg>
+                <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg" class="box">
+                    <defs>
+                      <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="100%" stop-color="blue" />
+                      </radialGradient>
+                      </defs>
+                      <defs>
+                        <pattern id="image2" x="0" y="0" width="1" height="1">
+                            <image xlink:href="https://media.npr.org/assets/img/2014/06/26/ed_sheeran_pub1_credit_ben_watts-53f939ba8a80e6fb1480a527e26e3fe68550f7f6-s1100-c50.jpg" width="40" height="40" preserveAspectRatio="none" object-position="center"/>
+                          </pattern>
+                      </defs>
+                  <polygon points="20,10 50,10 60,20 55,70 35,80 15,70 10,20 20,10" fill="url(#gradient)" stroke="white" onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+     
+                  <polygon points="25,15 45,15 55,22 53,50 35,55 17,50 15,22 25,15" fill="url(#image2)" stroke="darkblue"; onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+                  <text x="50%" y="70%" fill="black" font-size="5" font-weight="bold" text-anchor="middle">ED SHEERAN</text>
+                </svg>
+                <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg" class="box">
+                    <defs>
+                      <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="100%" stop-color="blue" />
+                      </radialGradient>
+                      </defs>
+                      <defs>
+                        <pattern id="image3" x="0" y="0" width="1" height="1">
+                            <image xlink:href="https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161" width="44" height="40" preserveAspectRatio="none" object-position="center"/>
+                          </pattern>>
+                      </defs>
+                  <polygon points="20,10 50,10 60,20 55,70 35,80 15,70 10,20 20,10" fill="url(#gradient)" stroke="white" onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+     
+                  <polygon points="25,15 45,15 55,22 53,50 35,55 17,50 15,22 25,15" fill="url(#image3)" stroke="darkblue"; onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+                  <text x="50%" y="70%" fill="black" font-size="5" font-weight="bold" text-anchor="middle">ILAIYARAAJA</text>
+                </svg>
+            </div>
+            <div class="image-profile-row">
+                <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg" height="552.35px" width="429.6px" class="box">
+                    <defs>
+                        <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" stop-color="red" />
+                        <stop offset="100%" stop-color="blue" />
+                        </radialGradient>
+                    </defs>
+                    <defs>
+                        <pattern id="image4" x="0" y="0" width="1" height="1">
+                            <image xlink:href="https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg" width="40" height="40" preserveAspectRatio="none" object-position="center"/>
+                        </pattern>>
+                    </defs>
+                    <polygon points="20,10 50,10 60,20 55,70 35,80 15,70 10,20 20,10" fill="url(#gradient)" stroke="white" onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+         
+                    <polygon points="25,15 45,15 55,22 53,50 35,55 17,50 15,22 25,15" fill="url(#image4)" stroke="darkblue"; onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+                  <text x="50%" y="70%" fill="black" font-size="5" font-weight="bold" text-anchor="middle">THE BEATLES</text>
+                </svg>
+                <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg" height="552.35px" width="429.6px" class="box">
+                        <defs>
+                          <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" stop-color="red" />
+                            <stop offset="100%" stop-color="blue" />
+                          </radialGradient>
+                          </defs>
+                          <defs>
+                            <pattern id="image5" x="0" y="0" width="1" height="1">
+                                <image xlink:href="https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e" width="42" height="40" preserveAspectRatio="none" object-position="center"/>
+                              </pattern>>
+                          </defs>
+                      <polygon points="20,10 50,10 60,20 55,70 35,80 15,70 10,20 20,10" fill="url(#gradient)" stroke="white" onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+         
+                      <polygon points="25,15 45,15 55,22 53,50 35,55 17,50 15,22 25,15" fill="url(#image5)" stroke="darkblue"; onclick= "window.location.href = 'https://www.example.com'" cursor="pointer";/>
+                  <text x="50%" y="70%" fill="black" font-size="5" font-weight="bold" text-anchor="middle"><tspan x="36">IMAGINE</tspan> <tspan x="35" dy="5">DRAGONS</tspan></text>
+                </svg>
+                
+            </div>
+        </div>
+        <div class="ender"> <a id="footer" href="about.html"> ABOUT </a>OK_16</div>
+    </body>
+</html>

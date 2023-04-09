@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <style>
             body {
-                background-image: url("https://wallpaperset.com/w/full/7/5/b/203988.jpg");
+                background-image: url('https://e0.pxfuel.com/wallpapers/514/6/desktop-wallpaper-abstract-glowing-blue-triangle-tessellation-thumbnail.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -73,7 +73,6 @@
                 transition-duration: 0.4s;
             }
             h1{
-                text-align: left;
                 color:white;
             }
             .floater{
@@ -133,63 +132,59 @@
                 color:red;
                 transition-duration: 0.4s;
             }
-            .image-profile-row {
-            display: flex;
-            justify-content: space-evenly;
-            padding-top: 50px;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .image-profile { 
-            width: 300px;
-            height: 300px;
-            margin-right: 10px;
-            opacity: 1;
-            display:flex;
-            flex-direction: column;
-        }
-        .profile-pic {
-            width: 300px;
-            height: 220px;
-            display:flex;
-            justify-content: center;
-            opacity: 1;
-            align-items: center;
+            .artist-and-album{
+                margin-top:60px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .song-table{
+                margin-top: 40px;
+                display:flex;
+                flex-direction: column-reverse;
+                border-width: 10px;
+                border-color: white;
+                /* background-color: aqua; */
+            }
+            .song-details{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                height:50px;
+                font-size: 10px;
+                font-size: 20px;
+                color:white;
+                /* background-color: brown; */
+                border-width: 2px;
+                border-color: white;
+                border-style: solid;
+                padding:10px;
+            }
+            .songpic{
+                display: flex;
+                padding:20px;
+                padding-left: 0;
+                border-right:2px solid white;
+                font-size: 40px;
+                flex: 1;
+            }
+            .songname{
+                /* height: 240px; */
+                vertical-align:middle;
+                padding-top: 25px;
+                display: flex;
+                flex: 3;
+                text-align: center;
+                border-right: 2px solid white;
+            }
+            .dummy{
+                height:80%;
+                width:80%;
+            }
+            .song-artist,
+            .song-album{
+                text-align:center;
+            }
             
-        } 
-        .image { 
-            margin-top: 0;
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            transition: 0.15s;
-            opacity: 1;
-            border:5px  solid gold;
-            box-shadow:
-                0 0 50px #fff,
-                -10px 0 80px #f0f,
-                10px 0 80px #0ff;
-        }
-        .image:hover {
-            margin-top: 0;
-            width: 260px;
-            height: 260px;
-            border-radius: 50%;
-            transition: 0.15s;
-            opacity: 1;
-        }
-        .image:active {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            transition: 0.15s;
-        } 
-        .Art-Name{
-            text-align: center;
-            font-size:40px;
-            justify-content: center;
-            color:white;
-        }
         </style>
     </head>
     <body style="height:1000px">
@@ -220,53 +215,47 @@
             <button class="options"><h1>PLAYLISTS</h1></button>
             <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
         </div>
+        <div class="artist-and-album">
+            <div class="song-artist">
+                <img class="dummy" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png">
+                <div class="artist-text">
+                    <p style="font-size: 20px;color: white"> Artist-Name</p>
+                </div>
+            </div>
+            <div class="song-album">
+                <img class="dummy" src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png">
+                <div class="album-text">
+                    <p style="font-size: 20px;color: white"> Album-Name</p>
+                </div>
+            </div>
+        </div>
+        <div class="song-table">
+            <div class="song-details">
+                <div class="songpic">1</div>
+                <div class="songname"><p style=" font-size: 40px;width: 100%;margin-top:10px">Name_of_song</p></div>
+                <p style="flex: 1; font-size: 40px;text-align: center;">time</p>
+            </div>
+            <div class="song-details">
+                <div class="songpic">1</div>
+                <div class="songname"><p style=" font-size: 40px;width: 100%;margin-top:10px">Name_of_song</p></div>
+                <p style="flex: 1; font-size: 40px;text-align: center;">time</p>
+            </div>
+            <div class="song-details">
+                <div class="songpic">1</div>
+                <div class="songname"><p style=" font-size: 40px;width: 100%;margin-top:10px">Name_of_song</p></div>
+                <p style="flex: 1; font-size: 40px;text-align: center;">time</p>
+            </div>
+            <div class="song-details">
+                <div class="songpic">1</div>
+                <div class="songname"><p style=" font-size: 40px;width: 100%;margin-top:10px">Name_of_song</p></div>
+                <p style="flex: 1; font-size: 40px;text-align: center;">time</p>
+            </div>
+            <div class="song-details">
+                <div class="songpic">1</div>
+                <div class="songname"><p style=" font-size: 40px;width: 100%;margin-top:10px">Name_of_song</p></div>
+                <p style="flex: 1; font-size: 40px;text-align: center;">time</p>
+            </div>
+        </div>
         
-        <div class="image-profile-row">
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>    
-                <div class="Art-Name"><p>Artitst 1</p></div>  
-            </div>
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>    
-                <div class="Art-Name"><p>Artitst 1</p></div>  
-            </div>
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>    
-                <div class="Art-Name"><p>Artitst 1</p></div>  
-            </div>
-        </div>
-        <div class="image-profile-row">
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>  
-                <div class="Art-Name"><p>Artitst 1</p></div>    
-            </div>
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>    
-                <div class="Art-Name"><p>Artitst 1</p></div>  
-            </div>
-            <div class="image-profile">
-                <div class="profile-pic">
-                <img src="LOGO.png" class="image">
-                </div>    
-                <div class="Art-Name"><p>Artitst 1</p></div>   
-            </div>
-        </div>
-    </body>
-        </div>
     </body>
 </html>
-
-https://filmfare.wwmindia.com/content/2022/jan/arrahman21641465973.jpg
-https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161
-https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg
-https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e

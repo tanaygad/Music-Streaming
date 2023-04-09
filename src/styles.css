@@ -24,7 +24,7 @@ body {
 .sec1{
     background-color:blueviolet;
     display:flex;
-    width:350px;
+    width:360px;
     align-items:center;
 }
 .sec2{
@@ -101,6 +101,7 @@ h1{
     border:5px solid white;
     border-radius:20px;
     align-items:center;
+    position: relative;
 }
 h2{
     color:black;
@@ -139,6 +140,7 @@ h2{
 a{
     color:black;
     text-decoration:none;
+
 }
 a:hover{
     color:red;
@@ -201,17 +203,59 @@ a:hover{
     background-color:black;
     opacity:0.8;
     margin-top:50px;
-    
+    padding-top:50px;
 }
 
+.floatertag{
+    position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:80px;
+    height:40px;
+    background-color:yellow;
+    right:3%;
+    top:-3%;
+    border-radius: 5px 5px 0px 20px;
+    border:5px solid orange;
+}
+
+.status{
+    text-align:center;
+    color:red;
+    font-size:25px;
+    margin-top:50px;
+}
+.floatertag:hover{
+    width:130px;
+    height:100px;
+    transition-duration:0.4s ;
+}
+.vis{
+    visibility:hidden;
+}
+.floatertag:hover .status{
+    font-size:30px;
+    transition-duration:0.4s ;
+}
+.floatertag:hover .status .vis{
+    visibility:visible;
+    transition-duration:0.4s ;
+}
 .topartists{
     display:flex;
     flex-direction:row;
     justify-content: center;
-    height:450px;
+    height:480px;
 }
 .label2{
     border-top:5px solid red;
+    background-color:black;
+    opacity:0.8;
+    margin-top:50px;
+}
+.label3{
+    border-top:5px solid blue;
     background-color:black;
     opacity:0.8;
     margin-top:50px;
@@ -239,8 +283,23 @@ a:hover{
     transition-duration: 0.4s;
 }
 .card2{
+
     border: 10px solid red;
     background-color: orange;
+    width:280px;
+    padding-top:0px;
+    margin-left:80px;
+    margin-right:80px;
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+    border-radius: 140px 140px 20px 20px;
+    display:inline-block;
+    height:395px;
+}
+.card3{
+    border: 10px solid darkblue;
+    background-color: black;
     width:280px;
     padding-top:0px;
     margin-left:80px;
@@ -249,7 +308,7 @@ a:hover{
     text-align: center;
     border-radius: 140px 140px 20px 20px;
     display:inline-block;
-    height:360px;
+    height:350px;
 }
 
 .card2:hover{
@@ -257,6 +316,13 @@ a:hover{
               0 0 20px 7px #fe6e00,
               0 0 25px 20px #f4b807,
               0 0 30px 25px #ddec0b;
+    transition-duration: 0.4s;
+}
+.card3:hover{
+    box-shadow: 0 0 10px 5px #020143,
+              0 0 20px 7px #0a02f1,
+              0 0 25px 20px #2331ee,
+              0 0 30px 25px #9d91f3;
     transition-duration: 0.4s;
 }
 
@@ -299,3 +365,42 @@ a:hover{
 }
 /*
 <img class="imgfloat" src="https://www.tripsavvy.com/thmb/ZDRQXV-PiFDTFZu4x22mZkYuw9s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-930881934-5ae56fe48023b90036464e72.jpg"> */
+.container{
+    width:90%;
+    height:80%;
+    margin-left:50px;
+    margin-right:50px;
+    height:1400px;
+    display:flwx;
+    flex-direction: column;
+}
+.ribbon:hover .ribbon1{
+    fill:url(#gradient2);
+    transition-duration: 0.4s;
+}
+
+.image-profile-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image { 
+    margin-top: 0;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    transition: 0.15s;
+    opacity: 1;
+    border:5px  solid gold;
+    box-shadow:
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.box:hover{
+    filter:url(#drop-shadow);
+}

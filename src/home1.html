@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> PARADISE - Homepage </title>
+        <title> RESONANCE - Homepage </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
                 <pre>             </pre>
             </div>
             <div class="sec3">
-                <div><h2><a href="http://127.0.0.1:5500/src/home1.html">HOME</a></h2></div>
-                <div><h2><a href="http://127.0.0.1:5500/src/about.html">ABOUT</a></h2></div>
-                <div><h2>ARTISTS</h2></div>
+                <div><h2><a href="home1.html"  style="color:white;">HOME</a></h2></div>
+                <div><h2><a href="about.html">ABOUT</a></h2></div>
+                <div><h2><a href="artists.html">ARTISTS</a></h2></div>
                 <div style="padding-right:10px"><h2>LOGIN</h2></div>
             </div>
 
@@ -35,10 +35,10 @@
                 <div class="dropdown-content">
                   <button class="options1"><a href="#label1"><h1>&bull;  TOP ARTISTS</h1></a></button>
                   <button class="options1"><a href="#label2"><h1>&bull;  TOP ALBUMS</h1></a></button>
-                  <button class="options1"><a href="#"><h1>&bull;  TOP SONGS</h1></a></button>
+                  <button class="options1"><a href="#label3"><h1>&bull;  TOP SONGS</h1></a></button>
                 </div>
               </div>
-            <button class="options"><h1>ARTISTS</h1></button>
+            <button class="options" onclick = "window.location.href='artists.html';"><h1>ARTISTS</h1></button>
             <button class="options"><h1>SONGS</h1></button>
             <button class="options"><h1>FAVOURITES</h1></button>
             <button class="options"><h1>THEMES</h1></button>
@@ -48,9 +48,10 @@
         </div>
         <div class="floater">
             <img src="https://t3.ftcdn.net/jpg/04/04/42/32/360_F_404423266_dS1fvJbdw1d42K63S1DqtmYGgTJbypYS.jpg" class="imgfloat" >
-            <button class="slideright" onclick="window.location.href='http://127.0.0.1:5500/src/home2.html'">
+            <button class="slideright" onclick="window.location.href='home2.html'">
                 <img class="rightslideimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcAwZlFvoBxI5A1yP99MLwVrkDEhS9UThApCh-BCrg8gWMROIu5ebzIlVYJELKnM0_4A&usqp=CAU">
             </button>
+            
         </div>
         <div class="label1" id="label1">
             <div style="display:block;text-align: center;"><h1 class="topchartsheadings">Top ARTISTS</h1></div>
@@ -75,38 +76,70 @@
                     <a href="" target="_blank">
                         <img src="https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161" class="pic">
                         <h1 class="Name">ILAIYARAAJA</h1>
-                        <p class="followers">ISAIGNANI-MUSICAL GENIUS</p>
+                        <p  id="label2" class="followers">ISAIGNANI-MUSICAL GENIUS</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="label2" id="label2">
+        <div class="label2">
             <div style="display:block;text-align: center;"><h1 class="topchartsheadings" style="color:red">Top ALBUMS</h1></div>
             <div class="topartists">
                 <div class="card2">
                     <a href="" target="_blank">
                         <img src="https://m.media-amazon.com/images/M/MV5BZmQwMDY5OTAtYjllNC00NWVkLWIxYWYtN2Q5NzFkMDc0NWIzXkEyXkFqcGdeQXVyODMyODMxNDY@._V1_.jpg" class="pic" style="border-color:white">
                         <h1 class="Name" style="color:red">ROJA ~ AR RAHMAN</h1>
-                        <p class="followers">1 B views</p>
-
+                        <p class="followers"> Year : 1992 </p>
+                        <p class="followers"> 3 M+ CDs sold </p>
                     </a>
                 </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6"></div>
                 <div class="card2">
                     <a href="" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/1/1e/Imagine_Dragons_Mercury_album_cover_2022.webp.png/220px-Imagine_Dragons_Mercury_album_cover_2022.webp.png" class="pic" style="border-color:white">
                         <h1 class="Name" style="color:red"> MERCURIAL ACT ~ IMAGINE DRAGONS</h1>
-                        <p class="followers"> MOZART OF MADRAS </p>
+                        <p class="followers"> Year : 2021/22 </p>
+                        <p class="followers"> 1M+ CDs sold </p>
                     </a>
                 </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6"></div>
                 <div class="card2">
                     <a href="" target="_blank">
-                        <img src="https://image.khaleejtimes.com/?uuid=26575727-be55-50ae-919f-54c54f5f61c8&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.44204&width=1200&height=675&x=1.0E-5&y=0.02161" class="pic" style="border-color:white">
-                        <h1 class="Name" style="color:red">ILAIYARAAJA</h1>
-                        <p class="followers">ISAIGNANI-MUSICAL GENIUS</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4w3ZUVsHkTE614b34PZFFIU0vNnhg9LyrCoxJYfGQir4-xVf" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:red"> ABBEY ROAD ~ THE BEATLES </h1>
+                        <p class="followers"> Year : 1969 </p>
+                        <p  id="label3" class="followers"> 19.9M+ CDs sold </p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="ender"> <a id="footer" href="http://127.0.0.1:5500/src/about.html"> ABOUT </a>OK_16</div>
+        <div class="label3">
+            <div style="display:block;text-align: center;"><h1 class="topchartsheadings" style="color:red">Top SONGS</h1></div>
+            <div class="topartists" style="height:450px">
+                <div class="card3">
+                    <a href="" target="_blank">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273aa597e50829169e6994eb403" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:blue"> ENEMY </h1>
+                        <p class="followers"> ~IMAGINE DRAGONS </p>
+                    </a>
+                </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6"></div>
+                <div class="card3">
+                    <a href="" target="_blank">
+                        <img src="https://grungecake.com/wp-content/uploads/2018/01/ed-sheeran-beyonce-perfect-grungecake-thumbnail.jpg" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:blue"> PERFECT</h1>
+                        <p class="followers"> ~ED SHEERAN & BEYONCE </p>
+                    </a>
+                </div>
+                <div style="height:90%;border-left:2px solid white;opacity:0.6"></div>
+                <div class="card3">
+                    <a href="" target="_blank">
+                        <img src="https://www.thetelugufilmnagar.com/wp-content/uploads/2023/02/PS2-Featured.webp" class="pic" style="border-color:white">
+                        <h1 class="Name" style="color:blue"> Veera Raja Veera ~ PS2</h1>
+                        <p class="followers"> AR RAHMAN Musical </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ender"> <a id="footer" href="about.html"> ABOUT </a>OK_16</div>
     </body>
 </html>
