@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body style="height:1000px">
+    <body style="height:1000px" class="blackbg">
         <div class="navbar">
             <div class="sec1">
                 <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png" class="logo">
@@ -20,28 +20,35 @@
                 <pre>             </pre>
             </div>
             <div class="sec3">
-                <div><h2><a href="home1.html">HOME</a></h2></div>
-                <div><h2><a href="about.html" style="color:white;">ABOUT</a></h2></div>
-                <div><h2><a href="artists.html">ARTISTS</a></h2></div>
+                <div><h2><a href="home1.html" id="link">HOME</a></h2></div>
+                <div><h2><a href="about.html" id="link" >ABOUT</a></h2></div>
+                <div><h2><a href="artists.html" id="link" style="color:white;">ARTISTS</a></h2></div>
+                <div><a href="search.html" id="link" style="text-align:center;"><span style="font-size: 30px;"><div style="-webkit-transform: rotate(45deg); 
+                    -moz-transform: rotate(45deg); 
+                      -o-transform: rotate(45deg);
+                         transform: rotate(45deg);
+                         font-weight: bold;">
+         &#9906;
+     </div></span></a></div>
                 <div style="padding-right:10px"><h2>LOGIN</h2></div>
             </div>
 
         </div>
         <div class="sidebar">
-            <button class="options"><h1>SEARCH</h1></button>
+            <button class="options" onclick = "window.location.href='search.html';"><h1>SEARCH</h1></button>
             
             <div class="dropdown">
                 <button class="dropbtn"><h1>TOP CHARTS</h1></button>
                 <div class="dropdown-content">
-                  <button class="options1"><a href="#"><h1>&bull;  TOP ARTISTS</h1></a></button>
-                  <button class="options1"><a href="#"><h1>&bull;  TOP ALBUMS</h1></a></button>
-                  <button class="options1"><a href="#"><h1>&bull;  TOP SONGS</h1></a></button>
+                  <button class="options1"><a href="#label1"><h1>&bull;  TOP ARTISTS</h1></a></button>
+                  <button class="options1"><a href="#label2"><h1>&bull;  TOP ALBUMS</h1></a></button>
+                  <button class="options1"><a href="#label3"><h1>&bull;  TOP SONGS</h1></a></button>
                 </div>
               </div>
             <button class="options" onclick = "window.location.href='artists.html';"><h1>ARTISTS</h1></button>
             <button class="options"><h1>SONGS</h1></button>
             <button class="options"><h1>FAVOURITES</h1></button>
-            <button class="options"><h1>THEMES</h1></button>
+            <button class="options" onclick = "window.location.href='spotlight.html';"><h1>SPOTLIGHT</h1></button>
             <button class="options"><h1>EXPLORE</h1></button>
             <button class="options"><h1>PLAYLISTS</h1></button>
             <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
@@ -91,5 +98,6 @@
                 </div>
         </div>
         <div class="ender"> <a id="footer" href="about.html"> ABOUT </a>OK_16</div>
+        <script src="script1.js"></script>
     </body>
 </html>

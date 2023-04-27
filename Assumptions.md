@@ -10,4 +10,11 @@ for now different files have been created for every single image(2) of that floa
 We have provided minimum info on most  of the artist pages without elaborating further (providing extra info).
 For song albums having more than 5 songs we have only noted down 5 of them and the no of songs written on the 
 albums page has been written only as 5 to maintain consistency with the song page
-We have not followed the naming constrains set by the instructions pdf 
+We have not followed the naming constrains set by the instructions pdf .
+
+
+
+The radio buttons added have been made in shape of a star by making display prop of the radiobutton to none
+The search  page has been linked in the home page on both the nav bar and search bar
+The spotlight page has been linked in the homepage in the sidebar only
+The typing effect has been used for artist name in the individual artists page 

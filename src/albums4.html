@@ -20,28 +20,35 @@
                 <pre>             </pre>
             </div>
             <div class="sec3">
-                <div><h2><a href="home1.html">HOME</a></h2></div>
-                <div><h2><a href="about.html">ABOUT</a></h2></div>
-                <div><h2><a href="artists.html">ARTISTS</a></h2></div>
+                <div><h2><a href="home1.html" id="link">HOME</a></h2></div>
+                <div><h2><a href="about.html" id="link" >ABOUT</a></h2></div>
+                <div><h2><a href="artists.html" id="link" style="color:white;">ARTISTS</a></h2></div>
+                <div><a href="search.html" id="link" style="text-align:center;"><span style="font-size: 30px;"><div style="-webkit-transform: rotate(45deg); 
+                    -moz-transform: rotate(45deg); 
+                      -o-transform: rotate(45deg);
+                         transform: rotate(45deg);
+                         font-weight: bold;">
+         &#9906;
+     </div></span></a></div>
                 <div style="padding-right:10px"><h2>LOGIN</h2></div>
             </div>
 
         </div>
         <div class="sidebar">
-            <button class="options"><h1>SEARCH</h1></button>
+            <button class="options" onclick = "window.location.href='search.html';"><h1>SEARCH</h1></button>
             
             <div class="dropdown">
                 <button class="dropbtn"><h1>TOP CHARTS</h1></button>
                 <div class="dropdown-content">
-                  <button class="options1"><a href="#"><h1>&bull;  TOP ARTISTS</h1></a></button>
-                  <button class="options1"><a href="#"><h1>&bull;  TOP ALBUMS</h1></a></button>
-                  <button class="options1"><a href="#"><h1>&bull;  TOP SONGS</h1></a></button>
+                  <button class="options1"><a href="#label1"><h1>&bull;  TOP ARTISTS</h1></a></button>
+                  <button class="options1"><a href="#label2"><h1>&bull;  TOP ALBUMS</h1></a></button>
+                  <button class="options1"><a href="#label3"><h1>&bull;  TOP SONGS</h1></a></button>
                 </div>
               </div>
             <button class="options" onclick = "window.location.href='artists.html';"><h1>ARTISTS</h1></button>
             <button class="options"><h1>SONGS</h1></button>
             <button class="options"><h1>FAVOURITES</h1></button>
-            <button class="options"><h1>THEMES</h1></button>
+            <button class="options" onclick = "window.location.href='spotlight.html';"><h1>SPOTLIGHT</h1></button>
             <button class="options"><h1>EXPLORE</h1></button>
             <button class="options"><h1>PLAYLISTS</h1></button>
             <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
@@ -50,7 +57,7 @@
         <div class="imagecontainer">
             <img src="https://www.billboard.com/wp-content/uploads/2022/12/imagine-dragons-Press-Photo-Credit-Eric-Ray-Davidson-2022-billboard-1548.jpg" class="artistpic1">
             <img src="https://img.freepik.com/free-photo/flame-border-background-black-realistic-fire-image_53876-153392.jpg" class="artistpic2" class="artistpic2">
-            <div class="artistname"><h1 style="color:red;font-size:60px;">IMAGINE DRAGONS</h1></div>
+            <div class="artistname"><h1 style="color:red;font-size:60px;" id="typed-text"></h1></div>
         </div>
 
         <div class="image-profile-row1">
@@ -89,6 +96,23 @@
             </div>
         </div>
         <div class="ender"> <a id="footer" href="about.html"> ABOUT </a>OK_16</div>
+        <script src="script1.js"></script>
+        <script>
+            const text = "IMAGINE DRAGONS"; // the text you want to type out
+            const delay = 100; // the delay between each character in milliseconds
+
+            let i = 0;
+            function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, delay);
+            }
+            }
+
+            typeWriter();
+
+        </script>
     </body>
 
 </html>

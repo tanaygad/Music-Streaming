@@ -1,10 +1,22 @@
+const links = document.querySelectorAll('#link');
+links.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    link.style.color = 'red';
+  });
+  link.addEventListener('mouseout', () => {
+    link.style.color = 'black';
+  });
+});
+
+
+
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-btn');
 const durationInput = document.getElementById('duration-input');
 const explicitFilter = document.getElementById('explicit-filter');
 const resetButton = document.getElementById('reset-filter-button');
 let currentAudio = null;
-
+ 
 resetButton.addEventListener('click',()=>{
     explicitFilter.value='';
     durationInput.value='(inf)';
@@ -36,10 +48,10 @@ function search(){
    const maxDuration = durationInput.value;
    const explicitness = explicitFilter.value;
    // Build the iTunes API URL with the user's search query
-
+ 
     const url = `https://itunes.apple.com/search?term=${query}`;
     let added=0;
-
+ 
    // Fetch the search results from the iTunes API
    fetch(url)
       .then(response => response.json())
@@ -95,7 +107,7 @@ function search(){
                   `;
                   
                   searchResults.appendChild(resultElement);
-
+ 
                   const audioElement = resultElement.querySelector('audio');
                   audioElement.addEventListener('play', () => {
                     if (currentAudio && currentAudio !== audioElement) {
@@ -123,7 +135,7 @@ function search(){
                   `;
                   
                   searchResults.appendChild(resultElement);
-
+ 
                   // Add event listener to the audio element to pause any currently playing audio
                   const audioElement = resultElement.querySelector('audio');
                   audioElement.addEventListener('play', () => {

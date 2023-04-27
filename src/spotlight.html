@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> RESONANCE - SPOTLIGHT </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="height:1000px" class="general">
+        <div class="navbar">
+            <div class="sec1">
+                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/1855075/settings_images/fdUtfRMRS6ycSqXG41I0_Screenshot_2020-04-27_at_15.38.42.png" class="logo">
+                <p class="title">RESONANCE</p>
+            </div>
+            <div class="sec2">
+                <pre>             </pre>
+            </div>
+            <div class="sec3">
+                <div><h2><a href="home1.html" id="link">HOME</a></h2></div>
+                <div><h2><a href="about.html" id="link" >ABOUT</a></h2></div>
+                <div><h2><a href="artists.html" id="link">ARTISTS</a></h2></div>
+                <div><a href="search.html" id="link" style="text-align:center"><span style="font-size: 30px;"><div style="-webkit-transform: rotate(45deg); 
+                    -moz-transform: rotate(45deg); 
+                      -o-transform: rotate(45deg);
+                         transform: rotate(45deg);
+                         font-weight: bold;">
+         &#9906;
+     </div></span></a></div>
+                <div style="padding-right:10px"><h2>LOGIN</h2></div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <button class="options" onclick = "window.location.href='search.html';"><h1>SEARCH</h1></button>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><h1>TOP CHARTS</h1></button>
+                <div class="dropdown-content">
+                  <button class="options1"><a href="#label1"><h1>&bull;  TOP ARTISTS</h1></a></button>
+                  <button class="options1"><a href="#label2"><h1>&bull;  TOP ALBUMS</h1></a></button>
+                  <button class="options1"><a href="#label3"><h1>&bull;  TOP SONGS</h1></a></button>
+                </div>
+              </div>
+            <button class="options" onclick = "window.location.href='artists.html';"><h1>ARTISTS</h1></button>
+            <button class="options"><h1>SONGS</h1></button>
+            <button class="options"><h1>FAVOURITES</h1></button>
+            <button class="options" onclick = "window.location.href='spotlight.html';"><h1>SPOTLIGHT</h1></button>
+            <button class="options"><h1>EXPLORE</h1></button>
+            <button class="options"><h1>PLAYLISTS</h1></button>
+            <button class="options" style="padding-right:10px"><h1>FOLLOWING</h1></button>
+        </div>
+        
+        <div>
+            <h1 class="spotlightartist" style="height:70px">ED SHEERAN</h1>
+        </div> 
+        <div class="imgdiv">
+            <img src="https://media.npr.org/assets/img/2014/06/26/ed_sheeran_pub1_credit_ben_watts-53f939ba8a80e6fb1480a527e26e3fe68550f7f6-s1100-c50.jpg" class="spotlightimg">
+        </div>   
+        <div style="border:5px solid darkblue;background-color: lime;color:darkblue;border-radius:20px;font-size: 25px;margin:50px;padding:20px">
+            Ed Sheeran is a British singer-songwriter from West Yorkshire known for his many compositions. For film soundtracks, he had performed "I See Fire" for The Hobbit: The Desolation of Smaug. He acted in Game of Thrones, Bridget Jones' Baby, The Simpsons, Popstar: Never Stop Popping and Star Wars: The Rise of Skywalker.
+        </div>
+        <div style="border:5px solid black;margin:100px;border-radius: 20px;display: flex; align-items: center;">
+        <p id="demo"></p>
+        </div>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jul 1, 2023 00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = "Upcoming album releases in " + days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+        </script>
+        <table id="saved-data">
+            <thead>
+                <tr>
+                    <th style="width:10px">Sl No</th>
+                    <th style="width:30px">Rating</th>
+                    <th style="width:200px">Name</th>
+                    <th style="width:400px">Review</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <button class="rating" style="color:red;background-color: yellow;font-size:30px;font-weight: bold;border: 3 px solid red;border-radius: 10px;height:60px;width:400px">Rate ED SHEERAN</button>
+        </div>
+        <div class="rate" style="padding:20px;margin-top:100px;margin: 50px;border-radius: 50px;border:10 px solid red;background-color: lightblue;color:red;text-align: center;font-size: 20px;font-weight: bold;">
+            <form onsubmit="saveData(event)">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+            
+                    <div class="wrapper" style="color:black">
+                        <input type="radio" id="r1" name="rg1" value=5>
+                        <label for="r1" style="height: 30px;margin-left: 5px;">&#9733;</label>
+                        <input type="radio" id="r2" name="rg1" value=4>
+                        <label for="r2" style="height: 30px;margin-left: 5px;">&#9733;</label>
+                        <input type="radio" id="r3" name="rg1" value=3>
+                        <label for="r3" style="height: 30px;margin-left: 5px;">&#9733;</label>
+                        <input type="radio" id="r4" name="rg1" value=2>
+                        <label for="r4" style="height: 30px;margin-left: 5px;">&#9733;</label>
+                        <input type="radio" id="r5" name="rg1" value=1>
+                        <label for="r5" style="height: 30px;margin-left: 5px;">&#9733;</label>
+                    </div><br>
+                    <label for="review">Review:</label>
+                    <input type="text" id="review" name="review"><br>
+                    <button type="submit" style="margin:20px;height:30px;width:70px;border-radius:5px;border:3px solid white;color:white;background-color: black;">Submit</button>
+            </form>
+        </div>
+        <div class="ender"> <a id="footer" href="about.html"> ABOUT </a>OK_16</div>
+        <script src="script1.js">
+        </script>
+    </body>
+</html>
